@@ -8,10 +8,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://iTomma.github.io',
-  baseUrl: '/cif-docs/',
+  baseUrl: '/CIF-Docs/',
 
   organizationName: 'iTomma',
-  projectName: 'cif-docs',
+  projectName: 'CIF-Docs',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
