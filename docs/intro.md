@@ -27,8 +27,6 @@ This documentation covers the full internals for modders who want to understand 
 
 | Topic | Description |
 |---|---|
-| [Architecture Overview](core/architecture) | Source files and what each one does |
-| [Item Discovery & Folder Layout](core/item-discovery) | Where to put your item files |
 | [item.txt Full Reference](reference/item-txt) | Every key you can use in an item definition file |
 | [Entity Attributes](reference/entity-attributes) | Stats for `modifier` and `add` (armor, passives, consumables) |
 | [Item Attributes](reference/item-attributes) | Stats for `enchant` (oils and scrolls) |
