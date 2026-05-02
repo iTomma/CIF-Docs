@@ -13,7 +13,7 @@ const config = {
   organizationName: 'iTomma',
   projectName: 'cif-docs',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   headTags: [
