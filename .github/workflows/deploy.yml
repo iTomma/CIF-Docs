@@ -18,6 +18,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+      - run: touch build/.nojekyll
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
