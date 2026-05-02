@@ -1,0 +1,223 @@
+/**
+ * Custom Item Framework Docs
+ * Visual theme inspired by SULFUR's grim, sulfurous atmosphere.
+ * Dark earthy backgrounds, amber fire tones, off-white text.
+ */
+
+/* ─── Fonts ──────────────────────────────────────────────────────────────── */
+
+:root {
+  --ifm-font-family-base: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  --ifm-heading-font-family: 'Oswald', 'Impact', Arial Narrow, sans-serif;
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.7;
+}
+
+/* ─── Light mode (fallback — kept tolerable) ────────────────────────────── */
+
+:root {
+  --ifm-color-primary: #b05a1e;
+  --ifm-color-primary-dark: #9d511b;
+  --ifm-color-primary-darker: #944d19;
+  --ifm-color-primary-darkest: #7a3f15;
+  --ifm-color-primary-light: #c36321;
+  --ifm-color-primary-lighter: #cc6a24;
+  --ifm-color-primary-lightest: #d9782e;
+
+  --ifm-background-color: #f5efe6;
+  --ifm-background-surface-color: #ede4d8;
+  --ifm-font-color-base: #2a1f14;
+  --ifm-code-background: #e8dfd0;
+  --ifm-code-font-size: 88%;
+
+  --docusaurus-highlighted-code-line-bg: rgba(176, 90, 30, 0.12);
+}
+
+/* ─── Dark mode (primary experience) ───────────────────────────────────── */
+
+[data-theme='dark'] {
+  --ifm-color-primary: #d4823a;
+  --ifm-color-primary-dark: #c07330;
+  --ifm-color-primary-darker: #b56b2d;
+  --ifm-color-primary-darkest: #955825;
+  --ifm-color-primary-light: #dc9150;
+  --ifm-color-primary-lighter: #e09858;
+  --ifm-color-primary-lightest: #e8ac76;
+
+  --ifm-background-color: #16120d;
+  --ifm-background-surface-color: #1f1912;
+  --ifm-font-color-base: #d9cfc2;
+  --ifm-font-color-secondary: #a89d8e;
+
+  --ifm-navbar-background-color: #0e0b08;
+  --ifm-navbar-shadow: 0 1px 0 0 #3a2d1e;
+
+  --ifm-footer-background-color: #0e0b08;
+  --ifm-footer-color: #a89d8e;
+  --ifm-footer-link-color: #d4823a;
+
+  --ifm-toc-border-color: #2e2318;
+  --ifm-hr-border-color: #2e2318;
+  --ifm-color-emphasis-300: #3a2d1e;
+  --ifm-color-emphasis-600: #8a7968;
+  --ifm-color-emphasis-700: #a89d8e;
+
+  --ifm-code-background: #201a12;
+  --ifm-code-color: #d4a96a;
+  --ifm-code-font-size: 88%;
+
+  --ifm-table-stripe-background: rgba(255, 255, 255, 0.025);
+  --ifm-table-border-color: #2e2318;
+
+  --docusaurus-highlighted-code-line-bg: rgba(212, 130, 58, 0.15);
+
+  --ifm-menu-color: #c9bfb3;
+  --ifm-menu-color-active: #d4823a;
+  --ifm-menu-color-background-active: rgba(212, 130, 58, 0.1);
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.04);
+
+  --ifm-breadcrumb-color-active: #d4823a;
+
+  --docusaurus-tag-list-border: #2e2318;
+}
+
+/* ─── Headings ───────────────────────────────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+
+[data-theme='dark'] h1,
+[data-theme='dark'] h2 {
+  color: #e09050;
+}
+
+[data-theme='dark'] h3 {
+  color: #c9a070;
+}
+
+/* ─── Navbar ─────────────────────────────────────────────────────────────── */
+
+[data-theme='dark'] .navbar {
+  border-bottom: 1px solid #3a2d1e;
+}
+
+.navbar__title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #d4823a;
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────────────────── */
+
+[data-theme='dark'] .menu__link--active {
+  font-weight: 600;
+  border-left: 2px solid #d4823a;
+}
+
+[data-theme='dark'] .menu__list-item-collapsible:hover {
+  background: var(--ifm-menu-color-background-hover);
+}
+
+/* ─── Code blocks ────────────────────────────────────────────────────────── */
+
+[data-theme='dark'] code {
+  border: 1px solid #2e2318;
+  border-radius: 3px;
+}
+
+[data-theme='dark'] .prism-code {
+  background: #1a1410 !important;
+  border: 1px solid #2e2318;
+}
+
+/* ─── Tables ─────────────────────────────────────────────────────────────── */
+
+[data-theme='dark'] table {
+  border-collapse: collapse;
+}
+
+[data-theme='dark'] table th {
+  background: #251d13;
+  color: #d4823a;
+  font-family: var(--ifm-heading-font-family);
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #3a2d1e;
+}
+
+[data-theme='dark'] table td,
+[data-theme='dark'] table th {
+  border-color: #2e2318;
+}
+
+/* ─── Admonitions ────────────────────────────────────────────────────────── */
+
+[data-theme='dark'] .alert--danger {
+  background: #2a1010;
+  border-color: #7a2020;
+}
+
+[data-theme='dark'] .alert--warning {
+  background: #211908;
+  border-color: #7a5a10;
+}
+
+[data-theme='dark'] .alert--info,
+[data-theme='dark'] .alert--tip {
+  background: #0e1a12;
+  border-color: #2a5030;
+}
+
+[data-theme='dark'] .alert--note {
+  background: #141824;
+  border-color: #2a3060;
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+
+[data-theme='dark'] .footer {
+  border-top: 1px solid #2e2318;
+}
+
+/* ─── TOC (right sidebar) ────────────────────────────────────────────────── */
+
+[data-theme='dark'] .table-of-contents__link--active {
+  color: #d4823a;
+  font-weight: 600;
+}
+
+/* ─── Scrollbar (webkit) ─────────────────────────────────────────────────── */
+
+[data-theme='dark'] ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: #16120d;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: #3a2d1e;
+  border-radius: 3px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: #5a4530;
+}
+
+/* ─── Attribute tables ───────────────────────────────────────────────────── */
+
+.attribute-table td:first-child code {
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
